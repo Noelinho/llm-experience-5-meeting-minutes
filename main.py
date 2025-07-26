@@ -16,7 +16,6 @@ def generate_minute(audio_file):
 
 with gr.Blocks() as demo:
     file_output = gr.File()
-    upload_button = gr.UploadButton("Sube un archivo de audio", file_types=["audio"])
     generate_button = gr.Button(value="Generar minuta")
     minute_placeholder = gr.Markdown(label="Minuta generada")
 
